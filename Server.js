@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/Homepage", (req, res) => {
-  res.status(200).sendFile(__filename + "/Cv_index.html");
+  res.status(200).sendFile(path.join(__dirname + "/Cv_index.html"));
 });
 
 app.listen(process.env.PORT || 3001, () => {
