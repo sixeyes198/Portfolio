@@ -3,11 +3,6 @@ const cors = require("cors");
 const path = require("path");
 require("dotenv").config();
 
-// Files to path
-
-// const __filename = fileURLTOPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
-
 const app = express();
 
 app.use(express.static(path.join(__dirname)));
