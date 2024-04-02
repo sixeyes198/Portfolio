@@ -14,10 +14,6 @@ app.get("/", (req, res) => {
   res.status(200).sendFile(path.join(__dirname, "/public", "/cv_index.html"));
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "/public", "/cv_index.html"));
-});
-
 app.listen(process.env.PORT || 3001, () => {
   console.log(`Server listening ${process.env.PORT || 3001}`);
 });
