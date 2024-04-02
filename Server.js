@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-app.get("/Homepage", (req, res) => {
-  res.status(200).sendFile(path.join(__dirname, "public" + "/cv_index.html"));
+app.get("/homepage", (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, "/public", "/cv_index.html"));
 });
 
 app.listen(process.env.PORT || 3001, () => {
