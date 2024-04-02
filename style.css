@@ -10,7 +10,7 @@ body {
     rgba(148, 187, 233, 1) 100%
   );
 }
-/* navbar settings comment*/
+/* navbar settings */
 .nav_bar {
   list-style-type: none;
   display: flex;
